@@ -7,6 +7,7 @@ import SettingsMenu from "./componenets/SettingsMenu";
 import OverView from "./componenets/OverView";
 
 export default function Home() {
+  //@ts-ignore
   const { t, i18n } = useTranslation();
   const [isSettingsMenuOpen, setIsSettingsMenuOpen] = useState(false);
 
