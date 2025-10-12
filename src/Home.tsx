@@ -3,9 +3,12 @@ import { useTranslation } from "react-i18next";
 import Dock, { type DockItemData } from "./componenets/Dock";
 import { FaHome } from "react-icons/fa";
 import { IoMdSettings } from "react-icons/io";
+import SettingsMenu from "./componenets/SettingsMenu";
+import OverView from "./componenets/OverView";
 
 export default function Home() {
   const { t, i18n } = useTranslation();
+  const [isSettingsMenuOpen, setIsSettingsMenuOpen] = useState(false);
 
   const iconSize = 35;
 
@@ -26,7 +29,9 @@ export default function Home() {
     {
       icon: <IoMdSettings size={iconSize} />,
       label: "Settings",
-      onClick: () => {},
+      onClick: () => {
+        setIsSettingsMenuOpen(!isSettingsMenuOpen);
+      },
     },
   ];
 
@@ -34,6 +39,11 @@ export default function Home() {
     localStorage.getItem("data-theme") || "dark"
   );
 
+  useEffect(() => {
+    document.getElementById("display")!.addEventListener("click", () => {
+      setIsSettingsMenuOpen(false);
+    });
+  }, []);
   useEffect(() => {
     localStorage.setItem("data-theme", theme);
     document.documentElement.setAttribute("data-theme", theme);
@@ -57,16 +67,23 @@ export default function Home() {
 
   return (
     <div>
-      <h1 className="text-5xl">{t("home")}</h1>
-      <button className="btn" onClick={handleLanguage}>
-        Change Language
-      </button>
+      <div
+        className={`fixed bottom-5 left-1/2 z-50 flex -translate-x-1/2 flex-col items-center`}
+      >
+        {isSettingsMenuOpen && (
+          <SettingsMenu
+            theme={theme}
+            handleChangeTheme={handleChangeTheme}
+            handleLanguage={handleLanguage}
+            onClose={() => setIsSettingsMenuOpen(false)}
+          />
+        )}
+        <Dock items={dockItems} theme={theme}></Dock>
+      </div>
 
-      <button className="btn" onClick={handleChangeTheme}>
-        Change Theme
-      </button>
-
-      <Dock items={dockItems} theme={theme}></Dock>
+      <div id="display" className="w-full min-h-[100dvh]">
+        <OverView></OverView>
+      </div>
     </div>
   );
 }
