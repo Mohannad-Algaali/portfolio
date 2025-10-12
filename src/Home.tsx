@@ -40,11 +40,6 @@ export default function Home() {
   );
 
   useEffect(() => {
-    document.getElementById("display")!.addEventListener("click", () => {
-      setIsSettingsMenuOpen(false);
-    });
-  }, []);
-  useEffect(() => {
     localStorage.setItem("data-theme", theme);
     document.documentElement.setAttribute("data-theme", theme);
   }, [theme]);
@@ -67,22 +62,22 @@ export default function Home() {
 
   return (
     <div>
-      <div
-        className={`fixed bottom-5 left-1/2 z-50 flex -translate-x-1/2 flex-col items-center`}
-      >
-        {isSettingsMenuOpen && (
-          <SettingsMenu
-            theme={theme}
-            handleChangeTheme={handleChangeTheme}
-            handleLanguage={handleLanguage}
-            onClose={() => setIsSettingsMenuOpen(false)}
-          />
-        )}
-        <Dock items={dockItems} theme={theme}></Dock>
-      </div>
+      {isSettingsMenuOpen && (
+        <SettingsMenu
+          theme={theme}
+          handleChangeTheme={handleChangeTheme}
+          handleLanguage={handleLanguage}
+          onClose={() => setIsSettingsMenuOpen(false)}
+        />
+      )}
 
-      <div id="display" className="w-full min-h-[100dvh]">
+      <div id="display" className="min-h-[100dvh] w-full">
         <OverView></OverView>
+        <div
+          className={`fixed bottom-5 left-1/2 z-40 flex -translate-x-1/2 flex-col items-center`}
+        >
+          <Dock items={dockItems} theme={theme}></Dock>
+        </div>
       </div>
     </div>
   );

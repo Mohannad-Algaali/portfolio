@@ -13,34 +13,43 @@ export default function SettingsMenu({
   theme,
   handleChangeTheme,
   handleLanguage,
+  onClose,
 }: SettingsMenuProps) {
   const { i18n } = useTranslation();
   return (
-    <div className="absolute bottom-30 left-1/2 flex w-52 -translate-x-1/2 flex-col gap-2 rounded-lg border border-neutral-content/20 bg-base-100 p-2 z-100">
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          {theme === "dark" ? (
-            <MdDarkMode size={20} />
-          ) : (
-            <MdLightMode size={20} />
-          )}
-          <p>Theme</p>
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm"
+      onClick={onClose}
+    >
+      <div
+        className="absolute bottom-30 left-1/2 flex w-52 -translate-x-1/2 flex-col gap-2 rounded-lg border border-neutral-content/20 bg-base-100 p-2"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            {theme === "dark" ? (
+              <MdDarkMode size={20} />
+            ) : (
+              <MdLightMode size={20} />
+            )}
+            <p>Theme</p>
+          </div>
+          <input
+            type="checkbox"
+            className="toggle"
+            checked={theme === "dark"}
+            onChange={handleChangeTheme}
+          />
         </div>
-        <input
-          type="checkbox"
-          className="toggle"
-          checked={theme === "dark"}
-          onChange={handleChangeTheme}
-        />
-      </div>
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <IoLanguage size={20} />
-          <p>Language</p>
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <IoLanguage size={20} />
+            <p>Language</p>
+          </div>
+          <button className="btn btn-sm" onClick={handleLanguage}>
+            {i18n.language === "ar" ? "En" : "Ar"}
+          </button>
         </div>
-        <button className="btn btn-sm" onClick={handleLanguage}>
-          {i18n.language === "ar" ? "En" : "Ar"}
-        </button>
       </div>
     </div>
   );
