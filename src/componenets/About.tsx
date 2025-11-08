@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function About() {
   return (
     <div className="container border-2 border-secondary p-5 rounded-xl gap-3 flex flex-col">
