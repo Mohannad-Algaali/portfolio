@@ -5,6 +5,8 @@ import { FaHome } from "react-icons/fa";
 import { IoMdSettings } from "react-icons/io";
 import SettingsMenu from "./componenets/SettingsMenu";
 import OverView from "./componenets/OverView";
+import About from "./componenets/About";
+import Experience from "./componenets/Experience";
 
 export default function Home() {
   //@ts-ignore
@@ -62,7 +64,7 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div className="w-full sm:w-[40rem] m-auto p-5">
       {isSettingsMenuOpen && (
         <SettingsMenu
           theme={theme}
@@ -74,6 +76,8 @@ export default function Home() {
 
       <div id="display" className="min-h-[100dvh] w-full">
         <OverView></OverView>
+        <About></About>
+        <Experience></Experience>
         <div
           className={`fixed bottom-5 left-1/2 z-40 flex -translate-x-1/2 flex-col items-center`}
         >
