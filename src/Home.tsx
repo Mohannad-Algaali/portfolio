@@ -28,7 +28,7 @@ export default function Home() {
       icon: <FaHome size={iconSize} />,
       label: "Home",
       onClick: () => {
-        goToSection("");
+        goToSection("/");
       },
     },
     {

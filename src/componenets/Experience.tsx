@@ -62,33 +62,27 @@ export default function Experience() {
     pageList = educationList;
   }
   return (
-    <div className="mt-10 mb-40">
+    <div className="mt-10 mb-40 border-base-300 border-2 rounded-xl">
       <div className="flex flex-row mb-20 ">
         <button
           onClick={() => setPage("work")}
-          className={`flex-1 py-2 ${
-            page === "work" ? "" : "dark:bg-zinc-900 bg-zinc-200 text-white"
-          }`}
+          className={`flex-1 py-2 ${page === "work" ? "" : "bg-base-300"}`}
         >
           Experience
         </button>
         <button
           onClick={() => setPage("education")}
-          className={`flex-1 py-2 ${
-            page === "education"
-              ? ""
-              : "dark:bg-zinc-900 bg-zinc-200 text-white"
-          }`}
+          className={`flex-1 py-2 ${page === "education" ? "" : "bg-base-300"}`}
         >
           Education
         </button>
       </div>
       <div className="mt-5">
         {pageList.map((item, index) => (
-          <div key={index} className="mb-6">
+          <div key={index} className=" m-6">
             <div className="flex justify-between items-baseline">
               <h3 className="text-xl font-bold">{item.title}</h3>
-              <p className="text-sm text-gray-400">
+              <p className="text-sm text-muted">
                 {item.startDate} - {item.endDate}
               </p>
             </div>

@@ -90,8 +90,8 @@ function DockItem({
       onClick={onClick}
       className={`relative inline-flex items-center justify-center rounded-full ${
         theme === "dark"
-          ? "bg-[#060010] border-neutral-700"
-          : "bg-[#afafaf] border-neutral-900"
+          ? "bg-base-200 border-base-300"
+          : "bg-base-200 border-base-300"
       }   border-2 shadow-md ${className}`}
       tabIndex={0}
       role="button"
@@ -134,7 +134,7 @@ function DockLabel({ children, className = "", isHovered }: DockLabelProps) {
           animate={{ opacity: 1, y: -10 }}
           exit={{ opacity: 0, y: 0 }}
           transition={{ duration: 0.2 }}
-          className={`${className} absolute -top-6 left-1/2 w-fit whitespace-pre rounded-md border border-neutral-700 bg-[#060010] px-2 py-0.5 text-xs text-white`}
+          className={`${className} absolute -top-6 left-1/2 w-fit whitespace-pre rounded-md border border-base-300 bg-base-100 px-2 py-0.5 text-xs text-base-content`}
           role="tooltip"
           style={{ x: "-50%" }}
         >

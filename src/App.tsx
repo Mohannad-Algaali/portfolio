@@ -2,6 +2,7 @@
 import { useDebugValue, useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Home";
+import ProjectsPage from "./ProjectsPage";
 import { useTranslation } from "react-i18next";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/projects" element={<ProjectsPage />}></Route>
       </Routes>
     </Router>
   );

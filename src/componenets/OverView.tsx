@@ -25,9 +25,23 @@ export default function () {
         </div>
 
         <div className="flex flex-row gap-3 items-center justify-center">
-          <button className="btn btn-primary">Resume</button>
-          <FaGithub size={30}></FaGithub>
-          <FaLinkedin size={30}></FaLinkedin>
+          <a className="btn btn-primary" href="#">
+            Resume
+          </a>
+          <a
+            href="https://github.com/Mohannad-Algaali"
+            target="_blank"
+            className="bg-base-200 p-1 rounded-lg border-base-300 border-2"
+          >
+            <FaGithub size={30}></FaGithub>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mohannad-algaali-6454a224a/"
+            target="_blank"
+            className="bg-base-200 p-1 rounded-lg border-base-300 border-2"
+          >
+            <FaLinkedin size={30}></FaLinkedin>
+          </a>
         </div>
       </section>
     </div>
