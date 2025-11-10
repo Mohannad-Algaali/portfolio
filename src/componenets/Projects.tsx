@@ -50,12 +50,12 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="w-full mb-5 border-base-300 border-2 bg-base-100 container rounded-lg"
+            className="w-full mb-5 border-base-300 border-2 bg-base-100 container rounded-lg box-shadow"
           >
             <img
               src={project.imageUrl}
               alt={project.title}
-              className="cover w-full bg-base-200 rounded-lg aspect-[16/9]"
+              className="cover w-full bg-base-200 rounded-lg aspect-[16/9] text-center "
             />
             <div className="p-4">
               <h3 className="text-2xl">{project.title}</h3>

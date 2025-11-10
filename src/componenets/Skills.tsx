@@ -31,11 +31,11 @@ export default function Skills() {
     <div>
       <h2 className="text-center text-2xl my-5 ">Skills</h2>
 
-      <div className="grid grid-cols-5 gap-y-5">
+      <div className="grid grid-cols-5 -gap-y-1">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="space-y-2 p-2 m-2 rounded-xl border-2 border-base-300"
+            className="space-y-2 p-2 m-2 rounded-xl border-2 border-base-300 box-shadow"
           >
             <div className="flex justify-center">{skill.icon}</div>
             <p className="text-center text-sm text-muted">{skill.title}</p>

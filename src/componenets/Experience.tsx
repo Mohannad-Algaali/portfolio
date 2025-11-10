@@ -62,7 +62,7 @@ export default function Experience() {
     pageList = educationList;
   }
   return (
-    <div className="mt-10 mb-40 border-base-300 border-2 rounded-xl">
+    <div className="my-10  border-base-300 border-2 rounded-xl box-shadow">
       <div className="flex flex-row mb-20 ">
         <button
           onClick={() => setPage("work")}
