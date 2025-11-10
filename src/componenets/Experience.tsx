@@ -62,8 +62,8 @@ export default function Experience() {
     pageList = educationList;
   }
   return (
-    <div className="mt-10">
-      <div className="flex flex-row ">
+    <div className="mt-10 mb-40">
+      <div className="flex flex-row mb-20 ">
         <button
           onClick={() => setPage("work")}
           className={`flex-1 py-2 ${
