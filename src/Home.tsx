@@ -8,6 +8,7 @@ import OverView from "./componenets/OverView";
 import About from "./componenets/About";
 import Experience from "./componenets/Experience";
 import Projects from "./componenets/Projects";
+import Skills from "./componenets/Skills";
 
 export default function Home() {
   //@ts-ignore
@@ -79,6 +80,7 @@ export default function Home() {
         <OverView></OverView>
         <About></About>
         <Experience></Experience>
+        <Skills></Skills>
         <Projects></Projects>
         <div
           className={`fixed bottom-5 left-1/2 z-40 flex -translate-x-1/2 flex-col items-center`}
