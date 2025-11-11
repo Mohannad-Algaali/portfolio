@@ -19,7 +19,9 @@ export default function Experience() {
       description: [
         "Developed and maintained web applications using React, Laravel and React Native.",
         "Collaborated with cross-functional teams to deliver high-quality software.",
-        "Worked on project A, B, and C.",
+        "Made most of Aqua Marwa, an E-commerce for selling water in Saudi Arabia.",
+        "Patched a couple of issues in Waslah app.",
+        "Implemented payment systems in multiple projects.",
       ],
     },
   ];
@@ -68,7 +70,7 @@ export default function Experience() {
           onClick={() => setPage("work")}
           className={`flex-1 py-2 ${page === "work" ? "" : "bg-base-300"}`}
         >
-          Experience
+          Work
         </button>
         <button
           onClick={() => setPage("education")}

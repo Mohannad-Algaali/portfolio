@@ -12,7 +12,7 @@ import {
   SiMysql,
 } from "react-icons/si";
 export default function Skills() {
-  const size = 45;
+  const size = 35;
   const skills = [
     { title: "Typescript", icon: <SiTypescript size={size}></SiTypescript> },
     { title: "HTML", icon: <SiHtml5 size={size}></SiHtml5> },
@@ -29,7 +29,7 @@ export default function Skills() {
 
   return (
     <div>
-      <h2 className="text-center text-2xl my-5 ">Skills</h2>
+      <h2 className="text-center text-2xl my-5 ">Technologies</h2>
 
       <div className="grid grid-cols-4 sm:grid-cols-5 -gap-y-1">
         {skills.map((skill, index) => (

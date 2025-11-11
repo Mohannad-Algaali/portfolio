@@ -35,14 +35,6 @@ export default function Projects({ numProjects }: { numProjects?: number }) {
       tags: ["React Native", "Laravel"],
       repo: "",
     },
-    {
-      title: "Project 1",
-      description: "Description of Project 1",
-      link: "",
-      imageUrl: "/path/to/image1.jpg",
-      tags: ["React", "TypeScript"],
-      repo: "",
-    },
   ];
 
   const getLength = () => {

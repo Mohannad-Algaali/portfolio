@@ -19,7 +19,7 @@ export default function () {
             <p className="mt-1 text-md text-muted">Full Stack Developer</p>
             <div className="flex flex-row justify-start items-center gap-2 bg-green-600/30 container rounded-full px-2 text-sm w-fit mt-2">
               <div className="bg-green-500 size-2 rounded-full"></div>
-              <p className="text-green-900">Available</p>
+              <p className="text-primary ">Available</p>
             </div>
           </div>
         </div>
