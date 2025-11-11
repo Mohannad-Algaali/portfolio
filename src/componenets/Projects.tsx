@@ -1,5 +1,3 @@
-import { a, div } from "motion/react-client";
-
 export default function Projects({ numProjects }: { numProjects?: number }) {
   const projects = [
     {
@@ -75,18 +73,18 @@ export default function Projects({ numProjects }: { numProjects?: number }) {
                   <h3 className="text-2xl">{project.title}</h3>
                   <p className="text-muted mb-5">{project.description}</p>
 
-                  <div className="flex flex-row-reverse justify-between">
-                    <div>
+                  <div className="flex flex-col gap-5 md:flex-row-reverse justify-between">
+                    <div className="self-end md:self-start">
                       {project.tags.map((tag, tagIndex) => (
                         <span
                           key={tagIndex}
-                          className="bg-info text-primary-content p-1 me-2 text-sm rounded-md"
+                          className="bg-primary text-primary-content p-1 me-2 text-sm rounded-md"
                         >
                           {tag}
                         </span>
                       ))}
                     </div>
-                    <div>
+                    <div className="flex flex-row">
                       {project.link && (
                         <a
                           className="btn btn-primary mx-2 "

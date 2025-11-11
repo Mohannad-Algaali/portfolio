@@ -31,7 +31,7 @@ export default function Skills() {
     <div>
       <h2 className="text-center text-2xl my-5 ">Skills</h2>
 
-      <div className="grid grid-cols-5 -gap-y-1">
+      <div className="grid grid-cols-4 sm:grid-cols-5 -gap-y-1">
         {skills.map((skill, index) => (
           <div
             key={index}
