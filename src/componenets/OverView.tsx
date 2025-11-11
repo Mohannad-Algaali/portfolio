@@ -17,9 +17,9 @@ export default function () {
             <h1 className="text-xl font-bold">Mohannad Algaali</h1>
 
             <p className="mt-1 text-md text-muted">Full Stack Developer</p>
-            <div className="flex flex-row justify-start items-center gap-2 bg-green-600/30 max-w-30 rounded-full px-2 text-sm">
+            <div className="flex flex-row justify-start items-center gap-2 bg-green-600/30 container rounded-full px-2 text-sm w-fit mt-2">
               <div className="bg-green-500 size-2 rounded-full"></div>
-              <p>Available</p>
+              <p className="text-green-900">Available</p>
             </div>
           </div>
         </div>
@@ -31,14 +31,14 @@ export default function () {
           <a
             href="https://github.com/Mohannad-Algaali"
             target="_blank"
-            className="bg-base-200 p-1 rounded-lg border-base-300 border-2"
+            className=" p-1 rounded-lg border-base-300 border-2"
           >
             <FaGithub size={30}></FaGithub>
           </a>
           <a
             href="https://www.linkedin.com/in/mohannad-algaali-6454a224a/"
             target="_blank"
-            className="bg-base-200 p-1 rounded-lg border-base-300 border-2"
+            className=" p-1 rounded-lg border-base-300 border-2"
           >
             <FaLinkedin size={30}></FaLinkedin>
           </a>

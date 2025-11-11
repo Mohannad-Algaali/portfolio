@@ -35,7 +35,7 @@ export default function Skills() {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="space-y-2 p-2 m-2 rounded-xl border-2 border-base-300 box-shadow"
+            className="space-y-2 p-2 m-2 rounded-xl border-2 border-base-300 box-shadow aspect-square flex flex-col justify-center items-center"
           >
             <div className="flex justify-center">{skill.icon}</div>
             <p className="text-center text-sm text-muted">{skill.title}</p>

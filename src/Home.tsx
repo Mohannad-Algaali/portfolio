@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Dock, { type DockItemData } from "./componenets/Dock";
-import { FaHome } from "react-icons/fa";
+import { FaCode, FaHome } from "react-icons/fa";
 import { IoMdSettings } from "react-icons/io";
 import SettingsMenu from "./componenets/SettingsMenu";
 import OverView from "./componenets/OverView";
@@ -9,6 +9,7 @@ import About from "./componenets/About";
 import Experience from "./componenets/Experience";
 import Projects from "./componenets/Projects";
 import Skills from "./componenets/Skills";
+import Footer from "./componenets/Footer";
 
 export default function Home() {
   //@ts-ignore
@@ -17,10 +18,8 @@ export default function Home() {
 
   const iconSize = 35;
 
-  const goToSection = (sectionId: string) => {
-    const link = document.createElement("a");
-    link.setAttribute("href", `#${sectionId}`);
-    link.click();
+  const goToPage = (pageUrl: string) => {
+    window.location.assign(pageUrl);
   };
 
   const dockItems: DockItemData[] = [
@@ -28,7 +27,14 @@ export default function Home() {
       icon: <FaHome size={iconSize} />,
       label: "Home",
       onClick: () => {
-        goToSection("/");
+        // goToSection("/");
+      },
+    },
+    {
+      icon: <FaCode size={iconSize} />,
+      label: "Projects",
+      onClick: () => {
+        goToPage("/projects");
       },
     },
     {
@@ -81,7 +87,8 @@ export default function Home() {
         <About></About>
         <Experience></Experience>
         <Skills></Skills>
-        <Projects></Projects>
+        <Projects numProjects={3}></Projects>
+        <Footer></Footer>
         <div
           className={`fixed bottom-5 left-1/2 z-40 flex -translate-x-1/2 flex-col items-center`}
         >
