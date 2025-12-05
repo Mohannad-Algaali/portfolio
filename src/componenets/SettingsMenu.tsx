@@ -15,7 +15,7 @@ export default function SettingsMenu({
   handleLanguage,
   onClose,
 }: SettingsMenuProps) {
-  const { i18n } = useTranslation();
+  const {t, i18n } = useTranslation();
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm"
@@ -32,7 +32,7 @@ export default function SettingsMenu({
             ) : (
               <MdLightMode size={20} />
             )}
-            <p>Theme</p>
+            <p>{t('theme')}</p>
           </div>
           <input
             type="checkbox"
@@ -44,7 +44,7 @@ export default function SettingsMenu({
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <IoLanguage size={20} />
-            <p>Language</p>
+            <p>{t('language')}</p>
           </div>
           <button className="btn btn-sm" onClick={handleLanguage}>
             {i18n.language === "ar" ? "En" : "Ar"}

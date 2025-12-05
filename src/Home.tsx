@@ -25,21 +25,21 @@ export default function Home() {
   const dockItems: DockItemData[] = [
     {
       icon: <FaHome size={iconSize} />,
-      label: "Home",
+      label:t( "home"),
       onClick: () => {
         // goToSection("/");
       },
     },
     {
       icon: <FaCode size={iconSize} />,
-      label: "Projects",
+      label:t( "projects"),
       onClick: () => {
         goToPage("/projects");
       },
     },
     {
       icon: <IoMdSettings size={iconSize} />,
-      label: "Settings",
+      label:t( "settings"),
       onClick: () => {
         setIsSettingsMenuOpen(!isSettingsMenuOpen);
       },

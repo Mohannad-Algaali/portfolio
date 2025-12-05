@@ -11,25 +11,34 @@ import {
   SiVuedotjs,
   SiMysql,
 } from "react-icons/si";
+import { useTranslation } from "react-i18next";
+
 export default function Skills() {
+  const { t } = useTranslation();
   const size = 35;
   const skills = [
-    { title: "Typescript", icon: <SiTypescript size={size}></SiTypescript> },
-    { title: "HTML", icon: <SiHtml5 size={size}></SiHtml5> },
-    { title: "CSS", icon: <SiCss3 size={size}></SiCss3> },
+    {
+      title: "Typescript",
+      icon: <SiTypescript size={size}></SiTypescript>,
+    },
+    { title: "Html", icon: <SiHtml5 size={size}></SiHtml5> },
+    { title: "Css", icon: <SiCss3 size={size}></SiCss3> },
     { title: "React", icon: <SiReact size={size}></SiReact> },
-    { title: "Tailwind", icon: <SiTailwindcss size={size}></SiTailwindcss> },
+    {
+      title: "Tailwind",
+      icon: <SiTailwindcss size={size}></SiTailwindcss>,
+    },
     { title: "Vue", icon: <SiVuedotjs size={size}></SiVuedotjs> },
-    { title: "PHP", icon: <SiPhp size={size}></SiPhp> },
+    { title: "Php", icon: <SiPhp size={size}></SiPhp> },
     { title: "Laravel", icon: <SiLaravel size={size}></SiLaravel> },
-    { title: "MySQL", icon: <SiMysql size={size}></SiMysql> },
+    { title: "Mysql", icon: <SiMysql size={size}></SiMysql> },
     { title: "Git", icon: <SiGit size={size}></SiGit> },
     // { title: "Docker", icon: <SiDocker size={size}></SiDocker> },
   ];
 
   return (
     <div>
-      <h2 className="text-center text-2xl my-5 ">Technologies</h2>
+      <h2 className="text-center text-2xl my-5 ">{t("technologies")}</h2>
 
       <div className="grid grid-cols-4 sm:grid-cols-5 -gap-y-1">
         {skills.map((skill, index) => (

@@ -1,22 +1,18 @@
+import { useTranslation } from "react-i18next";
+
 export default function About() {
+  const { t } = useTranslation();
   return (
     <div className="container border-2 border-base-300 p-5 rounded-xl gap-3 flex flex-col box-shadow">
-      <h2 className="text-2xl font-bold">About Me</h2>
+      <h2 className="text-2xl font-bold">{t("aboutMe")}</h2>
       <p className="text-muted">
-        A <span className="text-base-content">software engineer</span> that is
-        capable of handling full projects from start to finish.
+        {t("aboutMeBio1")}
       </p>
       <p className="text-muted">
-        I study{" "}
-        <span className="text-base-content">
-          Bachelors in Information Technology
-        </span>{" "}
-        at MAHSA University in Malaysia.
+        {t("aboutMeBio2")}
       </p>
       <p className="text-muted">
-        I am ready to take on new{" "}
-        <span className="text-base-content">challenges</span> and contribute to
-        exciting projects.
+        {t("aboutMeBio3")}
       </p>
     </div>
   );

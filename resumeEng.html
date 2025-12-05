@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mohannad Algaali - Resume</title>
+        <!-- Load Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            "primary-dark":
+                                "#1e3a8a" /* Dark Blue for professional look */,
+                            "primary-light":
+                                "#93c5fd" /* Lighter Blue accent */,
+                            "bg-light": "#f7f9fc",
+                        },
+                        // Use Inter as the default font
+                        fontFamily: {
+                            sans: ["Inter", "sans-serif"],
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body class="font-sans m-0 p-0 bg-bg-light">
+        <!-- Main Container -->
+        <div
+            id="resume-container"
+            class="max-w-4xl mx-auto my-10 bg-white shadow-xl rounded-xl overflow-hidden"
+        >
+            <!-- Header Section -->
+            <header
+                class="bg-primary-dark text-white p-8 text-center rounded-t-xl"
+            >
+                <h1 class="text-3xl font-bold m-0">MOHANNAD ALGAALI</h1>
+                <p class="text-lg font-light opacity-90 mt-1 mb-2">
+                    Software Engineer | Full Stack Developer
+                </p>
+                <div class="text-sm mt-4">
+                    <span class="mr-4">📞 +60182866443</span>
+                    <span class="mr-4">📧 mohannadalgaali@gmail.com</span>
+                    <span>📍 Selangor, Malaysia</span>
+                </div>
+                <div class="mt-2">
+                    <a
+                        href="https://linkedin.com/in/mohannadalgaali"
+                        class="text-primary-light hover:text-white transition duration-300 mx-2 font-medium"
+                        >Linkedin</a
+                    >
+                    <a
+                        href="https://github.com/mohannadalgaali"
+                        class="text-primary-light hover:text-white transition duration-300 mx-2 font-medium"
+                        >GitHub</a
+                    >
+                </div>
+            </header>
+
+            <!-- Summary -->
+            <section class="p-8 border-b-2 border-gray-100">
+                <p class="m-0 leading-relaxed text-base">
+                    A software engineer that is capable of handling full
+                    projects from start to finish. I study Bachelors in
+                    Information Technology at MAHSA University in Malaysia. I am
+                    ready to take on new challenges and contribute to exciting
+                    projects.
+                </p>
+            </section>
+
+            <!-- Main Content (Two Columns) -->
+            <div class="flex flex-wrap lg:flex-nowrap">
+                <!-- Left Column: Experience & Projects -->
+                <main class="lg:w-2/3 w-full p-8 lg:pr-6">
+                    <!-- Professional Experience -->
+                    <section class="mb-8">
+                        <h2
+                            class="text-2xl font-semibold text-primary-dark border-b-4 border-gray-100 pb-2 mb-4"
+                        >
+                            PROFESSIONAL EXPERIENCE
+                        </h2>
+
+                        <!-- Job 1 -->
+                        <div class="mb-6">
+                            <div
+                                class="flex justify-between text-lg font-semibold text-gray-800"
+                            >
+                                <span>Full-Stack Engineer</span>
+                                <span class="font-normal text-gray-600"
+                                    >Tera Visions AI</span
+                                >
+                            </div>
+                            <p class="text-sm text-gray-500 mt-0 mb-2">
+                                Oct 2025 - Present
+                            </p>
+                            <ul
+                                class="list-disc ml-5 text-base leading-relaxed text-gray-700"
+                            >
+                                <li>
+                                    Built multiple full-stack applications for
+                                    multiple clients
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Featured Projects (Placeholder - needs update from website) -->
+                    <section class="mb-8">
+                        <h2
+                            class="text-2xl font-semibold text-primary-dark border-b-4 border-gray-100 pb-2 mb-4"
+                        >
+                            FEATURED PROJECTS
+                        </h2>
+
+                        <!-- Project 1 -->
+                        <div class="mb-5">
+                            <h3 class="text-lg text-primary-dark mt-0 mb-1">
+                                <a
+                                    href="#"
+                                    class="text-primary-dark hover:text-blue-600 transition duration-300 font-semibold"
+                                    >AI-Powered Content Generator</a
+                                >
+                                <span
+                                    class="text-xs font-normal text-blue-500 underline ml-1"
+                                    >[Demo/Source]</span
+                                >
+                            </h3>
+                            <p class="m-0 text-base text-gray-700">
+                                A scalable web application utilizing OpenAI APIs
+                                for generating marketing copy and articles.
+                            </p>
+                            <p class="m-0 text-sm text-gray-500 mt-1">
+                                Tech: Next.js, Python, AWS Lambda, DynamoDB
+                            </p>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="mb-5">
+                            <h3 class="text-lg text-primary-dark mt-0 mb-1">
+                                <a
+                                    href="#"
+                                    class="text-primary-dark hover:text-blue-600 transition duration-300 font-semibold"
+                                    >Real-Time Chat Application</a
+                                >
+                                <span
+                                    class="text-xs font-normal text-blue-500 underline ml-1"
+                                    >[Demo/Source]</span
+                                >
+                            </h3>
+                            <p class="m-0 text-base text-gray-700">
+                                Serverless application built with React and
+                                WebSockets for low-latency communication.
+                            </p>
+                            <p class="m-0 text-sm text-gray-500 mt-1">
+                                Tech: React, Firebase/Firestore, WebSockets,
+                                Tailwind CSS
+                            </p>
+                        </div>
+                    </section>
+                </main>
+
+                <!-- Right Column: Skills, Education, Languages (Sidebar) -->
+                <aside
+                    class="lg:w-1/3 w-full bg-bg-light p-8 lg:border-l lg:border-gray-200"
+                >
+                    <!-- Skills & Tech Stack -->
+                    <section class="mb-8">
+                        <h2
+                            class="text-xl font-semibold text-primary-dark border-b-2 border-gray-200 pb-1 mb-4"
+                        >
+                            SKILLS & TECH STACK
+                        </h2>
+
+                        <div class="mb-4">
+                            <h3
+                                class="text-base text-blue-800 mt-0 mb-1 font-semibold"
+                            >
+                                FRONT-END
+                            </h3>
+                            <p
+                                class="m-0 text-sm leading-relaxed text-gray-700"
+                            >
+                                Html, Css, React, Tailwind, Vue
+                            </p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h3
+                                class="text-base text-blue-800 mt-0 mb-1 font-semibold"
+                            >
+                                BACK-END & CLOUD
+                            </h3>
+                            <p
+                                class="m-0 text-sm leading-relaxed text-gray-700"
+                            >
+                                <strong class="font-semibold"
+                                    >Node.js (Express)</strong
+                                >, Php, Laravel
+                            </p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h3
+                                class="text-base text-blue-800 mt-0 mb-1 font-semibold"
+                            >
+                                DATABASES & TOOLS
+                            </h3>
+                            <p
+                                class="m-0 text-sm leading-relaxed text-gray-700"
+                            >
+                                PostgreSQL, MongoDB
+                                <strong class="font-semibold">CI/CD</strong>,
+                                Git, MySQL
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Education -->
+                    <section class="mb-8">
+                        <h2
+                            class="text-xl font-semibold text-primary-dark border-b-2 border-gray-200 pb-1 mb-4"
+                        >
+                            EDUCATION
+                        </h2>
+
+                        <div class="mb-4">
+                            <p class="text-base font-semibold m-0">
+                                Bachelors of Information Technology
+                            </p>
+                            <p class="text-sm text-gray-600 mt-0">
+                                MAHSA University
+                            </p>
+                            <p class="text-xs text-gray-500 mt-0">
+                                2025- Present
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Languages -->
+                    <section>
+                        <h2
+                            class="text-xl font-semibold text-primary-dark border-b-2 border-gray-200 pb-1 mb-4"
+                        >
+                            LANGUAGES
+                        </h2>
+                        <ul
+                            class="list-none m-0 p-0 text-sm leading-loose text-gray-700"
+                        >
+                            <li>
+                                <strong class="font-semibold">Arabic:</strong>
+                                Native
+                            </li>
+                            <li>
+                                <strong class="font-semibold">English:</strong>
+                                Fluent Professional
+                            </li>
+                            <li>
+                                <strong class="font-semibold">Spanish:</strong>
+                                Basic Business Interactions
+                            </li>
+                        </ul>
+                    </section>
+                </aside>
+            </div>
+        </div>
+    </body>
+</html>

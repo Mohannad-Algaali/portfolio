@@ -1,3 +1,36 @@
 {
-  "home": "Home"
+  "home": "Home",
+  "projects": "Projects",
+  "settings": "Settings",
+  "aboutMe": "About Me",
+  "aboutMeBio1": "A software engineer that is capable of handling full projects from start to finish.",
+  "aboutMeBio2": "I study Bachelors in Information Technology at MAHSA University in Malaysia.",
+  "aboutMeBio3": "I am ready to take on new challenges and contribute to exciting projects.",
+  "softwareEngineer": "software engineer",
+  "bachelorsInIt": "Bachelors in Information Technology",
+  "challenges": "challenges",
+  "work": "Work",
+  "education": "Education",
+  "fullStackDeveloper": "Full Stack Developer",
+  "liveDemo": "Live Demo",
+  "sourceCode": "Source Code",
+  "seeAllProjects": "See all projects",
+  "theme": "Theme",
+  "language": "Language",
+  "technologies": "Technologies",
+  "name": "Mohannad Al-gaali",
+  "available": "Available for work",
+  "resume": "Resume",
+  "skills": {
+    "typescript": "Typescript",
+    "html": "HTML",
+    "css": "CSS",
+    "react": "React",
+    "tailwind": "Tailwind",
+    "vue": "Vue",
+    "php": "PHP",
+    "laravel": "Laravel",
+    "mysql": "MySQL",
+    "git": "Git"
+  }
 }

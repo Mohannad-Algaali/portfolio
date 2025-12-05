@@ -1,3 +1,36 @@
 {
-  "home": "الرئيسية"
+  "home": "الرئيسية",
+  "projects": "المشاريع",
+  "settings": "الإعدادات",
+  "aboutMe": "عني",
+  "aboutMeBio1": "مهندس برمجيات قادر على التعامل مع المشاريع الكاملة من البداية إلى النهاية.",
+  "aboutMeBio2": "أدرس بكالoriوس في تكنولوجيا المعلومات في جامعة MAHSA في ماليزيا.",
+  "aboutMeBio3": "أنا مستعد لمواجهة تحديات جديدة والمساهمة في مشاريع مثيرة.",
+  "softwareEngineer": "مهندس برمجيات",
+  "bachelorsInIt": "بكالوريوس في تكنولوجيا المعلومات",
+  "challenges": "تحديات",
+  "work": "العمل",
+  "education": "التعليم",
+  "fullStackDeveloper": "مهندس برمجيات",
+  "liveDemo": "عرض مباشر",
+  "sourceCode": "الكود",
+  "seeAllProjects": "رؤية كل المشاريع",
+  "theme": "المظهر",
+  "language": "اللغة",
+  "technologies": "التقنيات",
+  "name": "مهند الجعلي",
+  "available": "متاح للعمل",
+  "resume": "السيرة الذاتية",
+  "skills": {
+    "typescript": "تايبسكريبت",
+    "html": "HTML",
+    "css": "CSS",
+    "react": "رياكت",
+    "tailwind": "تيلويند",
+    "vue": "فيو",
+    "php": "PHP",
+    "laravel": "لارافيل",
+    "mysql": "ماي إس كيو إل",
+    "git": "جيت"
+  }
 }

@@ -26,21 +26,21 @@ export default function ProjectsPage() {
   const dockItems: DockItemData[] = [
     {
       icon: <FaHome size={iconSize} />,
-      label: "Home",
+      label: t("home"),
       onClick: () => {
         goToPage("/");
       },
     },
     {
       icon: <FaCode size={iconSize} />,
-      label: "Projects",
+      label: t("projects"),
       onClick: () => {
         // goToSection("")
       },
     },
     {
       icon: <IoMdSettings size={iconSize} />,
-      label: "Settings",
+      label: t("settings"),
       onClick: () => {
         setIsSettingsMenuOpen(!isSettingsMenuOpen);
       },
