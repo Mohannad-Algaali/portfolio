@@ -9,7 +9,7 @@ export default function Projects({ numProjects }: { numProjects?: number }) {
       description:
         "An online room-based cards game that is built using web sockets.",
       descriptionAr:
-        "لعبة بطاقات على الإنترنت قائمة على الغرف مبنية باستخدام مآخذ الويب.",
+        "لعبة بطاقات على الإنترنت قائمة على الغرف مبنية باستخدام الويب سوكيت.",
       link: "https://fruit-cards.vercel.app/",
       imageUrl: "/assets/projects/fruit-cards.png",
       tags: ["React", "Nodejs", "Socket.io"],

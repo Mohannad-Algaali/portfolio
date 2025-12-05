@@ -62,7 +62,7 @@ export default function Experience() {
     },
     {
       title: "Self Taught",
-      titleAr: "علم النفس الذاتي",
+      titleAr: "تعليم ذاتي",
       place: "Various Online Platforms",
       placeAr: "منصات مختلفة عبر الإنترنت",
       startDate: "2023 Jan",
