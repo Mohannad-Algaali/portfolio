@@ -11,6 +11,7 @@ import Projects from "./componenets/Projects";
 import Skills from "./componenets/Skills";
 import Footer from "./componenets/Footer";
 import { useNavigate } from "react-router-dom";
+import Schedule from "./componenets/Schedule";
 
 export default function Home() {
 	//@ts-ignore
@@ -88,6 +89,7 @@ export default function Home() {
 				<About></About>
 				<Experience></Experience>
 				<Skills></Skills>
+				<Schedule></Schedule>
 				<Projects numProjects={3}></Projects>
 				<Footer></Footer>
 				<div

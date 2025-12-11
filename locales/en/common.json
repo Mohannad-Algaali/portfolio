@@ -32,5 +32,7 @@
     "laravel": "Laravel",
     "mysql": "MySQL",
     "git": "Git"
-  }
+  },
+  "workingHours": "Working Hours"
 }
+
