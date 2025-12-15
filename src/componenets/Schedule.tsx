@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 export default function Schedule() {
-	const {t} = useTranslation()
+  const { t } = useTranslation();
   const hours: number[] = Array.from({ length: 24 }, (_, i) => i + 1);
 
   const days = [
@@ -16,7 +16,7 @@ export default function Schedule() {
 
   return (
     <div className="flex flex-col justify-center items-center m-5">
-      <h1 className="text-2xl mb-4">{t('workingHours')}</h1>
+      <h1 className="text-2xl mb-4">{t("workingHours")}</h1>
 
       <div className="shadow-xl overflow-x-auto border-2 border-base-300 text-sm rounded-lg p-2">
         <table className="table-fixed border-2 border-base-100">
