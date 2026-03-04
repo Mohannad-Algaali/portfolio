@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Dock, { type DockItemData } from "./componenets/Dock";
 import { FaCode, FaHome } from "react-icons/fa";
-import { IoMdSettings } from "react-icons/io";
+// import { IoMdSettings } from "react-icons/io";
 import SettingsMenu from "./componenets/SettingsMenu";
 import OverView from "./componenets/OverView";
 import About from "./componenets/About";

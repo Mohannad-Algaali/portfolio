@@ -1,6 +1,6 @@
 //@ts-ignore
 import React from "react";
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaGithub,  FaWhatsapp } from "react-icons/fa";
 import pfp from "../assets/pfp.jpg";
 import { useTranslation } from "react-i18next";
 
