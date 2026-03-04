@@ -38,13 +38,13 @@ export default function Home() {
 				goToPage("/projects");
 			},
 		},
-		{
-			icon: <IoMdSettings size={iconSize} />,
-			label: t("settings"),
-			onClick: () => {
-				setIsSettingsMenuOpen(!isSettingsMenuOpen);
-			},
-		},
+		// {
+		// 	icon: <IoMdSettings size={iconSize} />,
+		// 	label: t("settings"),
+		// 	onClick: () => {
+		// 		setIsSettingsMenuOpen(!isSettingsMenuOpen);
+		// 	},
+		// },
 	];
 
 	const [theme, setTheme] = useState(
@@ -54,6 +54,8 @@ export default function Home() {
 	useEffect(() => {
 		localStorage.setItem("data-theme", theme);
 		document.documentElement.setAttribute("data-theme", theme);
+        setTheme('dark')
+        i18n.changeLanguage('ar')
 	}, [theme]);
 
 	const handleLanguage = () => {
@@ -86,10 +88,11 @@ export default function Home() {
 			<div id="display" className="min-h-[100dvh] w-full ">
 				<OverView></OverView>
 				<About></About>
-				<Experience></Experience>
+				<Experience ></Experience>
 				<Skills></Skills>
 				{/* <Schedule></Schedule> */}
-				<Projects numProjects={3}></Projects>
+				{/* <Projects numProjects={3}></Projects> */}
+				<Projects></Projects>
 				<Footer></Footer>
 				<div
 					className={`fixed bottom-5 left-1/2 z-40 flex -translate-x-1/2 flex-col items-center`}

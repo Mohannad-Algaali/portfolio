@@ -1,6 +1,6 @@
 //@ts-ignore
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import pfp from "../assets/pfp.jpg";
 import { useTranslation } from "react-i18next";
 
@@ -21,15 +21,15 @@ export default function OverView() {
             <p className="mt-1 text-md text-muted">{t("fullStackDeveloper")}</p>
             <div className="flex flex-row justify-start items-center gap-2 bg-green-600/30 container rounded-full px-2 text-sm w-fit mt-2">
               <div className="bg-green-500 size-2 rounded-full"></div>
-              <p className="text-primary ">{t("available")}</p>
+              <p className="primary-content text-xs">{t("available")}</p>
             </div>
           </div>
         </div>
 
         <div className="flex flex-row gap-3 items-center justify-center">
-          <a className="btn btn-primary" href="#">
-            {t("resume")}
-          </a>
+          {/* <a className="btn btn-primary" href="#"> */}
+          {/*   {t("resume")} */}
+          {/* </a> */}
           <a
             href="https://github.com/Mohannad-Algaali"
             target="_blank"
@@ -37,13 +37,21 @@ export default function OverView() {
           >
             <FaGithub size={30}></FaGithub>
           </a>
+
           <a
-            href="https://www.linkedin.com/in/mohannad-algaali-6454a224a/"
+            href="https://wa.me/message/4HO6ABNRVLK2K1"
             target="_blank"
             className=" p-1 rounded-lg border-base-300 border-2"
           >
-            <FaLinkedin size={30}></FaLinkedin>
+            <FaWhatsapp size={30}></FaWhatsapp>
           </a>
+          {/* <a */}
+          {/*   href="https://www.linkedin.com/in/mohannad-algaali-6454a224a/" */}
+          {/*   target="_blank" */}
+          {/*   className=" p-1 rounded-lg border-base-300 border-2" */}
+          {/* > */}
+          {/*   <FaLinkedin size={30}></FaLinkedin> */}
+          {/* </a> */}
         </div>
       </section>
     </div>

@@ -26,7 +26,7 @@ export default function ProjectsPage() {
 			icon: <FaHome size={iconSize} />,
 			label: t("home"),
 			onClick: () => {
-				goToPage("/");
+				goToPage("#overview");
 			},
 		},
 		{

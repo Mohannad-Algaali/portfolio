@@ -36,10 +36,10 @@ export default function Experience() {
       ],
       descriptionAr: [
         "تطوير وصيانة تطبيقات الويب باستخدام React و Laravel و React Native.",
-        "التعاون مع فرق متعددة الوظائف لتقديم برامج عالية الجودة.",
-        "صنع معظم أكوا مروة ، وهو تطبيق للتجارة الإلكترونية لبيع المياه في المملكة العربية السعودية.",
+        "التعاون مع فرق متعددة لتقديم برامج عالية الجودة.",
+        "تطوير أكوا مروة ، وهو تطبيق للتجارة الإلكترونية لبيع المياه في المملكة العربية السعودية.",
         "إصلاح بعض المشكلات في تطبيق وصلة.",
-        "تنفيذ أنظمة الدفع في مشاريع متعددة.",
+        "تصميم لوحات قيادة وأنظمة دفع في تطبيقات متعددة",
       ],
     },
   ];
@@ -67,8 +67,8 @@ export default function Experience() {
       placeAr: "منصات مختلفة عبر الإنترنت",
       startDate: "2023 Jan",
       startDateAr: "2023 يناير",
-      endDate: "Present",
-      endDateAr: "الحاضر",
+      endDate: "2025 Oct",
+      endDateAr: "2025 اكتوبر",
       description: [
         "Using online resources such as freeCodeCamp, Coursera, and YouTube to learn web development.",
         "Built several personal projects to apply learned skills.",
@@ -105,7 +105,7 @@ export default function Experience() {
     pageList = educationList;
   }
   return (
-    <div className="my-10  border-base-300 border-2 rounded-xl box-shadow">
+    <div id="experience" className="my-10  border-base-300 border-2 rounded-xl box-shadow">
       <div className="flex flex-row mb-20 ">
         <button
           onClick={() => setPage("work")}

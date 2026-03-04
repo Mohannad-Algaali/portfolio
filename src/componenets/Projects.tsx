@@ -31,7 +31,7 @@ export default function Projects({ numProjects }: { numProjects?: number }) {
       titleAr: "Tera Visions AI",
       description: "A company landing page with blog system",
       descriptionAr: "صفحة هبوط شركة مع نظام مدونة",
-      link: "",
+      link: "https://teravisionsai.com/",
       imageUrl: "/assets/projects/teravisions.png",
       tags: ["React", "TypeScript", "Laravel"],
       repo: "",
@@ -44,7 +44,7 @@ export default function Projects({ numProjects }: { numProjects?: number }) {
       descriptionAr:
         "تطبيق تجارة إلكترونية كامل لبيع منتجات المياه في المملكة العربية السعودية.",
       link: "",
-      imageUrl: "/path/to/image1.jpg",
+      imageUrl: "/assets/projects/marwa-preview.png",
       tags: ["React Native", "Laravel"],
       repo: "",
     },
@@ -58,7 +58,7 @@ export default function Projects({ numProjects }: { numProjects?: number }) {
   };
 
   return (
-    <div>
+    <div id="projects">
       <h2 className="text-center text-2xl my-10">{t("projects")}</h2>
 
       <div>
