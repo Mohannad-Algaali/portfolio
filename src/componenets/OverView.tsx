@@ -1,7 +1,9 @@
 //@ts-ignore
 import React from "react";
-import { FaGithub,  FaWhatsapp } from "react-icons/fa";
-import pfp from "../assets/pfp.jpg";
+import { FaGithub, FaWhatsapp } from "react-icons/fa";
+// import pfp from "../assets/pfp.jpg";
+// import pfp from "/assets/my-logo-no-bg.png";
+import pfp from "/assets/white-logo.png";
 import { useTranslation } from "react-i18next";
 
 export default function OverView() {
