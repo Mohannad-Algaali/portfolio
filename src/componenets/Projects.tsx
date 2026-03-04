@@ -20,11 +20,11 @@ export default function Projects({ numProjects }: { numProjects?: number }) {
       titleAr: "تجديد",
       description:
         "A prototype of a passport renewal system for Sudanese government.",
-      descriptionAr: "نموذج أولي لنظام تجديد جوازات السفر للحكومة السودانية.",
-      link: "",
+      descriptionAr: "نموذج أولي لنظام تجديد جوازات السفر للحكومة السودانية. كان هذا مشاركة في هاكائون Code4Sudan 2025.",
+      link: "https://passport-renew.vercel.app/",
       imageUrl: "/assets/projects/tajdeed.png",
       tags: ["React", "Nodejs"],
-      repo: "",
+      repo: "https://github.com/Mohannad-Algaali/passport-renew",
     },
     {
       title: "Tera Visions AI",
@@ -38,7 +38,7 @@ export default function Projects({ numProjects }: { numProjects?: number }) {
     },
     {
       title: "Aqua Marwa",
-      titleAr: "أكوا مروة",
+      titleAr: "أكوا مروى",
       description:
         "A full E-Commerce application for selling water products in Saudi Arabic. ",
       descriptionAr:
@@ -48,6 +48,19 @@ export default function Projects({ numProjects }: { numProjects?: number }) {
       tags: ["React Native", "Laravel"],
       repo: "",
     },
+
+    // {
+    //   title: "Project Manager",
+    //   titleAr: "أداة إدارة المشاريع",
+    //   description:
+    //     "A simple tool for managing and navigating projects in the command line.",
+    //   descriptionAr:
+    //     "اداة بسيطة لادارة المشاريع والتنقل بينها عبر مشغل الأوامر أو الcli.",
+    //   link: "",
+    //   imageUrl: "/assets/projects/projects-manager.png",
+    //   tags: ["Bun", "Typescript", "Bash"],
+    //   repo: "https://github.com/Mohannad-Algaali/projects-manager",
+    // },
   ];
 
   const getLength = () => {

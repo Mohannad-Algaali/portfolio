@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import Dock, { type DockItemData } from "./componenets/Dock";
-import { FaCode, FaHome } from "react-icons/fa";
+// import Dock, { type DockItemData } from "./componenets/Dock";
+// import { FaCode, FaHome } from "react-icons/fa";
 // import { IoMdSettings } from "react-icons/io";
 import SettingsMenu from "./componenets/SettingsMenu";
 import OverView from "./componenets/OverView";
@@ -10,42 +10,43 @@ import Experience from "./componenets/Experience";
 import Projects from "./componenets/Projects";
 import Skills from "./componenets/Skills";
 import Footer from "./componenets/Footer";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 // import Schedule from "./componenets/Schedule";
 
 export default function Home() {
-	const { t, i18n } = useTranslation();
+	// const { t, i18n } = useTranslation();
+	const {  i18n } = useTranslation();
 	const [isSettingsMenuOpen, setIsSettingsMenuOpen] = useState(false);
-	const navigate = useNavigate()
-	const iconSize = 35;
+	// const navigate = useNavigate()
+	// const iconSize = 35;
+	//
+	// const goToPage = (pageUrl: string) => {
+	// 	navigate(pageUrl)
+	// };
 
-	const goToPage = (pageUrl: string) => {
-		navigate(pageUrl)
-	};
-
-	const dockItems: DockItemData[] = [
-		{
-			icon: <FaHome size={iconSize} />,
-			label: t("home"),
-			onClick: () => {
-				// goToSection("/");
-			},
-		},
-		{
-			icon: <FaCode size={iconSize} />,
-			label: t("projects"),
-			onClick: () => {
-				goToPage("/projects");
-			},
-		},
-		// {
-		// 	icon: <IoMdSettings size={iconSize} />,
-		// 	label: t("settings"),
-		// 	onClick: () => {
-		// 		setIsSettingsMenuOpen(!isSettingsMenuOpen);
-		// 	},
-		// },
-	];
+	// const dockItems: DockItemData[] = [
+	// 	{
+	// 		icon: <FaHome size={iconSize} />,
+	// 		label: t("home"),
+	// 		onClick: () => {
+	// 			// goToSection("/");
+	// 		},
+	// 	},
+	// 	{
+	// 		icon: <FaCode size={iconSize} />,
+	// 		label: t("projects"),
+	// 		onClick: () => {
+	// 			goToPage("/projects");
+	// 		},
+	// 	},
+	// 	// {
+	// 	// 	icon: <IoMdSettings size={iconSize} />,
+	// 	// 	label: t("settings"),
+	// 	// 	onClick: () => {
+	// 	// 		setIsSettingsMenuOpen(!isSettingsMenuOpen);
+	// 	// 	},
+	// 	// },
+	// ];
 
 	const [theme, setTheme] = useState(
 		localStorage.getItem("data-theme") || "dark"
@@ -94,11 +95,11 @@ export default function Home() {
 				{/* <Projects numProjects={3}></Projects> */}
 				<Projects></Projects>
 				<Footer></Footer>
-				<div
-					className={`fixed bottom-5 left-1/2 z-40 flex -translate-x-1/2 flex-col items-center`}
-				>
-					<Dock items={dockItems} theme={theme}></Dock>
-				</div>
+				{/* <div */}
+				{/* 	className={`fixed bottom-5 left-1/2 z-40 flex -translate-x-1/2 flex-col items-center`} */}
+				{/* > */}
+					{/* <Dock items={dockItems} theme={theme}></Dock> */}
+				{/* </div> */}
 			</div>
 		</div>
 	);
